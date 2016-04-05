@@ -1,13 +1,18 @@
+using System;
+
 public class ExpressionBodyFunctionMember
 {
+    private string First;
+    private string Last;
+
   //methods
-  public int Add(int x, inty) => x + y;
+  public int Add(int x, int y) => x + y;
 
   //operator
-  public static int operator +(int a, int b) => a + b;
+  //public static int operator +(int a, int b) => a + b;
 
-  //implicit operators
-  public static implicit operator int(string value) => Convert.ToInt32(value);
+  ////implicit operators
+  //public static implicit operator int(string value) => Convert.ToInt32(value);
 
   //Void Methods
   public void Print() => Console.WriteLine("Hello World");
@@ -16,5 +21,5 @@ public class ExpressionBodyFunctionMember
   public string Name => First + " " + Last;
 
   //indexers
-  public Person this[long id] => store.LookupPerson(id);
+  public int this[long id] => First.Length;
 }
