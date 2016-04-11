@@ -1,4 +1,4 @@
-namespace CSharp6.AutoProperties
+namespace CSharp6.NewFeatures.AutoProperties
 {
     public class AutoPropertiesBefore
     {

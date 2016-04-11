@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSharp6</RootNamespace>
     <AssemblyName>CSharp6</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,16 +45,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoProperties\AutoPropertiesBefore.cs" />
-    <Compile Include="AutoProperties\AutoPropertiesInitalize.cs" />
-    <Compile Include="AutoProperties\AutoPropertiesInitalizeReadOnly.cs" />
-    <Compile Include="ExpressionBodiedFunctionMembers\ExpressionBodyFunctionMember.cs" />
-    <Compile Include="ExpressionBodiedFunctionMembers\ExpressionBodyFunctionMemberBefore.cs" />
+    <Compile Include="NewFeatures\AutoProperties\AutoPropertiesBefore.cs" />
+    <None Include="NewFeatures\AutoProperties\AutoProperties.Generated.cs" />
+    <Compile Include="NewFeatures\AutoProperties\AutoPropertiesInitalize.cs" />
+    <Compile Include="NewFeatures\AutoProperties\AutoPropertiesInitalizeReadOnly.cs" />
+    <None Include="NewFeatures\AwaitCatchInFinally\AwaitCatchInFinally.Generated.cs" />
+    <Compile Include="NewFeatures\AwaitCatchInFinally\AwaitCatchInFinally.Example.cs" />
+    <None Include="NewFeatures\ExceptionFilters\ExceptionFilter.Generated.il" />
+    <Compile Include="NewFeatures\ExpressionBodiedFunctionMembers\ExpressionBodyFunctionMember.cs" />
+    <Compile Include="NewFeatures\ExpressionBodiedFunctionMembers\ExpressionBodyFunctionMemberBefore.cs" />
+    <Compile Include="NewFeatures\IndexInitializers\IndexInitializer.Example.cs" />
+    <None Include="NewFeatures\IndexInitializers\IndexInitializer.Generated.cs" />
+    <None Include="NewFeatures\NameOfExpressions\NameOfExpression.Generated.cs" />
+    <Compile Include="NewFeatures\NameOfExpressions\NameOfExpression.Example.cs" />
+    <Compile Include="NewFeatures\NullConditionalOperator\NullConditionalOperator.Example.cs" />
+    <None Include="NewFeatures\NullConditionalOperator\NullConditionalOperator.Generated.cs" />
+    <Compile Include="NewFeatures\StringInterpolation\StringInterpolation.Example.cs" />
+    <None Include="NewFeatures\StringInterpolation\StringInterpolation.Generated.cs" />
+    <Compile Include="NewFeatures\UsingStatic\UsingStatic.Example.cs" />
+    <None Include="NewFeatures\UsingStatic\UsingStatic.Generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewFeatures\ExceptionFilters\ExceptionFilter.Example.cs" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
